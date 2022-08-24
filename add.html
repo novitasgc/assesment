@@ -1,0 +1,30 @@
+{{define "add"}}
+{{template "upper"}}
+
+<div class="container3">
+    <h1>Insert New Anime</h1>
+    <br>
+       
+        <form method="post" action="/insert">
+
+            <div class="form-group">
+              <label for="">Title</label>
+              <input type="text"
+                class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+
+            <div class="form-group">
+              <label for="genre">Genre</label>
+              <input type="text"
+                class="form-control" name="genre" id="genre" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+
+            <div class="form-group">
+              <label for="">Rating</label>
+              <input type="text" 
+              class="form-control" name="rating" id="rating" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+            
+            <button type="submit" class="button">Submit</button> | <a href="/"><button type="button" name="" id="" class="buttoncancel">Cancel</button></a>
+{{template "lower"}}
+{{end}}

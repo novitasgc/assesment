@@ -1,0 +1,33 @@
+{{define "edit"}}
+{{template "upper"}}
+
+<div class="container3">
+  <h1>Edit</h1>
+        <form method="post" action="/edited">
+
+            <div class="form-group">
+              <label class="sr-only" for="inputName"></label>
+              <input type="text" value={{.Id}}  class="form-control" name="id" id="id" placeholder="">
+            </div>
+
+            <div class="form-group">
+              <label for="">Title</label>
+              <input type="text"
+                class="form-control" name="title" value={{.Title}}  id="title" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+
+            <div class="form-group">
+              <label for="genre">Genre</label>
+              <input type="text"
+                class="form-control" name="genre" value={{.Genre}}  id="genre" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+
+            <div class="form-group">
+              <label for="">Rating</label>
+              <input type="text" 
+              class="form-control" name="rating" value={{.Rating}}  id="rating" aria-describedby="helpId" placeholder="" size="100">
+            </div>
+            
+            <button type="submit" class="button">Edit</button> | <a href="/"><button type="button" name="" id="" class="buttoncancel">Cancel</button></a>
+{{template "lower"}}
+{{end}}
