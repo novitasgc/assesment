@@ -9,7 +9,6 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 )
-
 var assesment = template.Must(template.ParseGlob("C:/Users/MSI-PC/Desktop/nop/assesment/*.html"))
 
 func main() {
